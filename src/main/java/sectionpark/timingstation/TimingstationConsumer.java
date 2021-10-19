@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class TimingstationConsumer {
-	
-    @RequestMapping(value="/consumer")
+
+    @RequestMapping(value = "/consumer")
     public String greeting(Model model) {
-    	return "consumer";
+        return "consumer";
     }
-    
+
 }
