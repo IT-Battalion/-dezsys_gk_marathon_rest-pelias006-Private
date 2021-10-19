@@ -1,6 +1,11 @@
 package sectionpark.model;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Text Here
@@ -10,10 +15,11 @@ import java.util.List;
  */
 public class CompetitionData {
     private String unitTiming;
-    private List<Party> party;
+    private Party[] party;
 
     public CompetitionData() {
         this.unitTiming = "hh:mm:ss";
+        this.party = new Party[0];
     }
 
     public String getUnitTiming() {
@@ -24,11 +30,11 @@ public class CompetitionData {
         this.unitTiming = unitTiming;
     }
 
-    public List<Party> getParty() {
+    public Party[] getParty() {
         return party;
     }
 
-    public void setParty(List<Party> party) {
+    public void setParty(Party[] party) {
         this.party = party;
     }
 }

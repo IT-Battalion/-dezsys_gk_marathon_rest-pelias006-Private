@@ -1,10 +1,11 @@
 package sectionpark.model;
 
+import javax.xml.bind.annotation.XmlElement;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class TimingstationData {
-	
+
 	private String timingstationID;
 	private String timestamp;
 

@@ -10,7 +10,10 @@ public class Party {
     private int partyID;
     private String timing;
 
-    public Party() {}
+    public Party(int partyID, String timing) {
+        this.partyID = partyID;
+        this.timing = timing;
+    }
 
     public int getPartyID() {
         return partyID;

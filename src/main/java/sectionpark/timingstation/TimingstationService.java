@@ -1,5 +1,7 @@
 package sectionpark.timingstation;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.springframework.stereotype.Service;
 import sectionpark.model.TimingstationData;
 
@@ -16,5 +18,9 @@ public class TimingstationService {
         return simulation.getData( inTimingstationID );
         
     }
-    
+
+    public TimingstationData getTimingstationXML(String inTimingstationID) {
+        TimingstationSimulation simulation = new TimingstationSimulation();
+        return simulation.getData(inTimingstationID);
+    }
 }
