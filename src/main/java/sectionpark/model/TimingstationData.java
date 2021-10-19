@@ -13,6 +13,8 @@ public class TimingstationData {
 
 	private double altitude;
 	private String unitAltitude;
+	private WeatherData weatherData;
+	private CompetitionData competitionData;
 
 	/**
 	 * Constructor
@@ -58,6 +60,38 @@ public class TimingstationData {
 
 	public void setAltitude(double altitude) {
 		this.altitude = altitude;
+	}
+
+	public String getUnitDistance() {
+		return unitDistance;
+	}
+
+	public void setUnitDistance(String unitDistance) {
+		this.unitDistance = unitDistance;
+	}
+
+	public String getUnitAltitude() {
+		return unitAltitude;
+	}
+
+	public void setUnitAltitude(String unitAltitude) {
+		this.unitAltitude = unitAltitude;
+	}
+
+	public WeatherData getWeatherData() {
+		return weatherData;
+	}
+
+	public void setWeatherData(WeatherData weatherData) {
+		this.weatherData = weatherData;
+	}
+
+	public CompetitionData getCompetitionData() {
+		return competitionData;
+	}
+
+	public void setCompetitionData(CompetitionData competitionData) {
+		this.competitionData = competitionData;
 	}
 
 	/**
